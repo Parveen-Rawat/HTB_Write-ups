@@ -6,7 +6,7 @@ Welcome to my First Blog. This is my first time writing a writeup so please corr
 First, We spawn the target and head over to new tab to see what's going on
 
 
-![alt text](/Login-Brute-Forcing/assets/skill-assessment1/01.png)
+![alt text](https://github.com/Parveen-Rawat/HTB_Write-ups/blob/main/Login-Brute-Forcing//assets/skill-assessment1/01.png)
 
 We see that we can't establish connection yet. and Looking at the question of this assessment. We can see that the target has Basic HTTP Authentication on the webpage to restrict us from seeing the contents
 
@@ -15,8 +15,8 @@ Lets Luanch hydra and try to brute force this.
 ```
 hydra -L /home/<username>/SecLists/Usernames/top-usernames-shortlist.txt -P /home/<username>/SecLists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt -V 94.237.53.81 http-get / -s 49717 -f
 ```
-![alt text](/Login-Brute-Forcing/assets/skill-assessment1/2.png)
-![alt text](/Login-Brute-Forcing/assets/skill-assessment1/3.png)
+![alt text](https://github.com/Parveen-Rawat/HTB_Write-ups/blob/main/Login-Brute-Forcing/assets/skill-assessment1/2.png)
+![alt text](https://github.com/Parveen-Rawat/HTB_Write-ups/blob/main/Login-Brute-Forcing/assets/skill-assessment1/3.png)
 
 There, we found the credentials
 
@@ -26,9 +26,9 @@ admin:Admin123
 
 Lets try loggin with our browser now and enter the credentials we found.
 
-![alt text](/Login-Brute-Forcing/assets/skill-assessment1/4.png)
+![alt text](https://github.com/Parveen-Rawat/HTB_Write-ups/blob/main/Login-Brute-Forcing/assets/skill-assessment1/4.png)
 
-![alt text](/Login-Brute-Forcing/assets/skill-assessment1/5.png)
+![alt text](https://github.com/Parveen-Rawat/HTB_Write-ups/blob/main/Login-Brute-Forcing/assets/skill-assessment1/5.png)
 
 There we go, Bingo
 
